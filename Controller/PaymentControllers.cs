@@ -29,7 +29,7 @@ namespace PaymentAPI.Controller
                 return BadRequest("Invalid payment method.");
             }
 
-            var paymentUrl = await paymentService.CreatePaymentURL(orderInfoModel);
+            var paymentUrl = await paymentService.CreatePaymentURL(orderInfoModel, HttpContext);
             return Ok(new { PayURL = paymentUrl });
         }
         [HttpGet("callback/{payment_name}")]

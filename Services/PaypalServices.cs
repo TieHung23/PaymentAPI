@@ -8,7 +8,7 @@ namespace PaymentAPI.Services
 {
     public class PaypalServices :  IPaymentServices
     {
-        public Task<string> CreatePaymentURL(OrderInfoModel orderInfo)
+        public Task<string> CreatePaymentURL(OrderInfoModel orderInfo, HttpContext context)
         {
             throw new NotImplementedException();
         }
