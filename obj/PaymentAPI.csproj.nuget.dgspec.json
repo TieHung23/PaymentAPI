@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "PayPal": {
+              "target": "Package",
+              "version": "[2.0.0-rc2, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[112.1.1-alpha.0.4, )"
