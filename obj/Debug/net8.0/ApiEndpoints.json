@@ -1,0 +1,39 @@
+[
+  {
+    "ContainingType": "PaymentAPI.Controller.PaymentControllers",
+    "Method": "Callback",
+    "RelativePath": "PaymentControllers/callback/{payment_name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payment_name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PaymentAPI.Controller.PaymentControllers",
+    "Method": "CreatePaymentURL",
+    "RelativePath": "PaymentControllers/create/{payment_name}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payment_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderInfoModel",
+        "Type": "PaymentAPI.Model.OrderInfoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
