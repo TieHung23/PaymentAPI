@@ -39,3 +39,6 @@ D:\SelfProject\PaymentAPI\obj\Debug\net8.0\refint\PaymentAPI.dll
 D:\SelfProject\PaymentAPI\obj\Debug\net8.0\PaymentAPI.pdb
 D:\SelfProject\PaymentAPI\obj\Debug\net8.0\PaymentAPI.genruntimeconfig.cache
 D:\SelfProject\PaymentAPI\obj\Debug\net8.0\ref\PaymentAPI.dll
+D:\SelfProject\PaymentAPI\bin\Debug\net8.0\VNPAY.NET.dll
+D:\SelfProject\PaymentAPI\bin\Debug\net8.0\BraintreeHttp-Dotnet.dll
+D:\SelfProject\PaymentAPI\bin\Debug\net8.0\Source.dll

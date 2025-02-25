@@ -9,7 +9,7 @@ namespace PaymentAPI.Services
     public interface IPaymentServices
     {
         string PaymentName();
-        Task<string> CreatePaymentURL(OrderInfoModel orderInfo);
+        Task<string> CreatePaymentURL(OrderInfoModel orderInfo, HttpContext context);
         Task<RespondModel> GetPaymentStatus(IQueryCollection collection);
     }
 }

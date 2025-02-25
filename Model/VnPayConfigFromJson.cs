@@ -14,5 +14,6 @@ namespace PaymentAPI.Model
         public string CurrCode { get; set; } = string.Empty;
         public string Version { get; set; } = string.Empty;
         public string Locale { get; set; } = string.Empty;
+        public string ReturnUrl { get; set; } = string.Empty;
     }
 }

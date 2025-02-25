@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "n6nqm4Z3PXc=",
+  "dgSpecHash": "Lot+PQ0WIns=",
   "success": true,
   "projectFilePath": "D:\\SelfProject\\PaymentAPI\\PaymentAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hungp\\.nuget\\packages\\braintreehttp-dotnet\\0.3.0\\braintreehttp-dotnet.0.3.0.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\microsoft.aspnetcore.http\\2.3.0\\microsoft.aspnetcore.http.2.3.0.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
@@ -17,13 +18,15 @@
     "C:\\Users\\hungp\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\hungp\\.nuget\\packages\\paypal\\2.0.0-rc2\\paypal.2.0.0-rc2.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\restsharp\\112.1.1-alpha.0.4\\restsharp.112.1.1-alpha.0.4.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
     "C:\\Users\\hungp\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
-    "C:\\Users\\hungp\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
+    "C:\\Users\\hungp\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\hungp\\.nuget\\packages\\vnpay.net\\8.5.0\\vnpay.net.8.5.0.nupkg.sha512"
   ],
   "logs": []
 }

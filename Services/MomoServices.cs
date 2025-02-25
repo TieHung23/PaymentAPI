@@ -20,7 +20,7 @@ namespace PaymentAPI.Services
         {
             _momoConfig = momoConfig;
         }
-        public async Task<string> CreatePaymentURL(OrderInfoModel orderInfo)
+        public async Task<string> CreatePaymentURL(OrderInfoModel orderInfo, HttpContext context)
         {
             orderInfo.OrderId = DateTime.Now.Ticks.ToString();
             var rawData =
@@ -62,13 +62,14 @@ namespace PaymentAPI.Services
             var orderInfo = collection.FirstOrDefault(s => s.Key == "orderInfo").Value;
             var orderId = collection.FirstOrDefault(s => s.Key == "orderId").Value;
             var message = collection.FirstOrDefault(s => s.Key == "message").Value;
-
+            var trancasionID = collection.FirstOrDefault(s => s.Key == "transId").Value;
             return await Task.FromResult(new RespondModel()
             {
                 Amount = amount!,
                 OrderId = orderId!,
                 OrderDescription = orderInfo!,
-                Message = message!
+                Message = message!,
+                TrancasionID = trancasionID!
             });
         }
 
