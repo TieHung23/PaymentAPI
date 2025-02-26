@@ -36,12 +36,12 @@ namespace PaymentAPI.Services
                 partnerCode = _momoConfig.Value.PartnerCode,
                 requestType = _momoConfig.Value.RequestType,
                 notifyUrl = _momoConfig.Value.NotifyUrl,
-                returnUrl = _momoConfig.Value.ReturnUrl + $"&BookingID={orderInfo.BookingID}",
+                returnUrl = _momoConfig.Value.ReturnUrl,
                 orderId = orderInfo.OrderId,
                 amount = orderInfo.Amount.ToString(),
                 orderInfo = orderInfo.OrderDescription,
                 requestId = orderInfo.OrderId,
-                extraData = "",
+                extraData = $"&BookingID={orderInfo.BookingID}",
                 signature = signature
             };
 

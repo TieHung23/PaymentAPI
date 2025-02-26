@@ -99,13 +99,15 @@ namespace PaymentAPI.Services
             var orderId = collection.FirstOrDefault(s => s.Key == "order_id").Value;
             var message = collection.FirstOrDefault(s => s.Key == "success").Value;
             var trancasionID = collection.FirstOrDefault(s => s.Key == "paymentId").Value;
+            var BookingID = collection.FirstOrDefault(s => s.Key == "BookingID").Value;
             return await Task.FromResult(new RespondModel()
             {
                 Amount = amount!,
                 OrderId = orderId!,
                 OrderDescription = orderInfo!,
                 Message = message!,
-                TrancasionID = trancasionID!
+                TrancasionID = trancasionID!,
+                BookingID = BookingID!
             });
         }
 
