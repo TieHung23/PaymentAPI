@@ -35,7 +35,7 @@ namespace PaymentAPI.Services
             pay.AddRequestData("vnp_Locale", _vnpayConfig.Value.Locale);
             pay.AddRequestData("vnp_OrderInfo", $"{orderInfo.GuestName} {orderInfo.OrderDescription} {orderInfo.Amount}");
             pay.AddRequestData("vnp_OrderType", "other");
-            pay.AddRequestData("vnp_ReturnUrl", _vnpayConfig.Value.ReturnUrl);
+            pay.AddRequestData("vnp_ReturnUrl", _vnpayConfig.Value.ReturnUrl + $"&BookingID={orderInfo.BookingID}");
             pay.AddRequestData("vnp_TxnRef", tick);
             pay.AddRequestData("vnp_ExpireDate", timeNow.AddMinutes(5).ToString("yyyyMMddHHmmss"));
             
