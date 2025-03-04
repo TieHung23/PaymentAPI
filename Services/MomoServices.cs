@@ -41,7 +41,7 @@ namespace PaymentAPI.Services
                 amount = orderInfo.Amount.ToString(),
                 orderInfo = orderInfo.OrderDescription,
                 requestId = orderInfo.OrderId,
-                extraData = $"&BookingID={orderInfo.BookingID}",
+                extraData = "",
                 signature = signature
             };
 
@@ -63,7 +63,7 @@ namespace PaymentAPI.Services
             var orderId = collection.FirstOrDefault(s => s.Key == "orderId").Value;
             var message = collection.FirstOrDefault(s => s.Key == "message").Value;
             var trancasionID = collection.FirstOrDefault(s => s.Key == "transId").Value;
-            var BookingID = collection.FirstOrDefault(s => s.Key == "BookingID").Value;
+            //var BookingID = collection.FirstOrDefault(s => s.Key == "BookingID").Value;
             return await Task.FromResult(new RespondModel()
             {
                 Amount = amount!,
@@ -71,7 +71,7 @@ namespace PaymentAPI.Services
                 OrderDescription = orderInfo!,
                 Message = message!,
                 TrancasionID = trancasionID!,
-                BookingID = BookingID!
+                //BookingID = BookingID!
             });
         }
 

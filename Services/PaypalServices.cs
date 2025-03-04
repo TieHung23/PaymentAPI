@@ -57,7 +57,7 @@ namespace PaymentAPI.Services
                 RedirectUrls = new RedirectUrls()
                 {
                     ReturnUrl =
-                        $"{urlCallBack}?payment_method=PayPal&success=1&order_id={paypalOrderId}&BookingID={orderInfo.BookingID}&amount={ConvertVndToDollar((double)orderInfo.Amount).ToString()}&order_description={orderInfo.OrderDescription}",
+                        $"{urlCallBack}?payment_method=PayPal&success=1&order_id={paypalOrderId}&amount={ConvertVndToDollar((double)orderInfo.Amount).ToString()}&order_description={orderInfo.OrderDescription}",
                     CancelUrl =
                         $"{urlCallBack}?payment_method=PayPal&success=0&order_id={paypalOrderId}"
                 },
